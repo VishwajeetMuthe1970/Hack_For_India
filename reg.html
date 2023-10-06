@@ -16,33 +16,37 @@
         padding-left: 35px;
         margin-right: 35%;
         margin-left: 35%;
+        margin-top: 5%;
         border-color: white;
         background-color: #152350;
         opacity: 50%;
       }
       ::placeholder {
-        color: blue;
+        color: black;
       }
       input[type="text"] {
         padding: 12px 0px 12px 35px;
+        width: 70%;
         border: 0;
         border-radius: 28px;
 
       }
       ::placeholder {
-        color: blue;
+        color: black;
         padding: 25px;
       }
       input[type="Email"] {
         padding: 12px 0px 12px 35px;
+        width: 70%;
         border: 0;
         border-radius: 20px;
       }
       ::placeholder {
-        color: blue;
+        color: black;
       }
       input[type="password"] {
         padding: 12px 0px 12px 35px;
+        width: 70%;
         border: 0;
         border-radius: 20px;
       }
@@ -100,6 +104,9 @@
       #submit:hover{
         background-color: #464cf1;
         cursor: pointer;
+      }
+      #span{
+        color: white;
       }
     </style>
   </head>
@@ -166,13 +173,13 @@
       <br />
       <br />
 
-      <a href="./forpass.html" target="_blank" style="color: white"
-        >Forget Password?</a
+     <span id="span"> Already have account? </span>&nbsp;<a href="./login.html" target="_blank" style="color: white"
+        >Log in</a
       >
       <br />
       <br />
       <!-- Button -->
-      <input type="submit" name="submit" id="submit" value="Submit" />
+     <a href="./login.html"> <input type="submit" name="submit" id="submit" value="Submit" /></a>
 
       <br />
       <br />
