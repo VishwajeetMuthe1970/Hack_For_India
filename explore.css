@@ -20,6 +20,10 @@ header > nav {
     position: relative;
 }
 
+#logo {
+    border-radius: 10px;
+}
+
 nav > img {
     position: absolute;
     left: 75px;
