@@ -20,6 +20,10 @@ header > nav {
     position: relative;
 }
 
+#logo {
+    border-radius: 10px;
+}
+
 nav > img {
     position: absolute;
     left: 75px;
@@ -44,41 +48,25 @@ nav > a {
     cursor: pointer;
 }
 
-main {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    margin: auto;
-    width: 60%;
+.left {
+    position: relative;
+    left: 100px;
+    text-align: left;
+    margin-top: 5rem;
+    max-width: 50%;
 }
 
-div > h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
-    margin: 0px;
-    margin-bottom: 25px;
-}
-
-div > p {
-    margin: 0px;
-    margin-bottom: 30px;
-}
-
-section {
-    background-image: url("./assets/images/pop-up.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 33.33% 33.34% 33.33%;
+.right {
+    position: relative;
+    right: 100px;
+    text-align: right;
+    margin-top: 5rem;
+    max-width: 50%;
+    margin-left: 50%;
 }
 
 footer {
     background-color: rgba(20, 35, 80, 0.5);
+    margin-top: 100px;
     padding: 20px;
 }
