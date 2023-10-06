@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <style>
+      #body {
+        background-image: url(./Images/background.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+      }
+      #div1 {
+        border: 3px solid black;
+        border-radius: 35px;
+        padding-left: 35px;
+        margin-right: 35%;
+        margin-left: 35%;
+        margin-top: 5%;
+        border-color: white;
+        background-color: #152350;
+        opacity: 50%;
+      }
+      ::placeholder {
+        color: black;
+      }
+      input[type="text"] {
+        padding: 12px 0px 12px 35px;
+        width: 70%;
+        border: 0;
+        border-radius: 28px;
+
+      }
+      ::placeholder {
+        color: black;
+        padding: 25px;
+      }
+      input[type="Email"] {
+        padding: 12px 0px 12px 35px;
+        width: 70%;
+        border: 0;
+        border-radius: 20px;
+      }
+      ::placeholder {
+        color: black;
+      }
+      input[type="password"] {
+        padding: 12px 0px 12px 35px;
+        width: 70%;
+        border: 0;
+        border-radius: 20px;
+      }
+      #name {
+        box-shadow: 120 23px;
+      }
+      #name {
+        position: left;
+        background-size: 30px;
+        background-repeat: no-repeat;
+      }
+
+      #name {
+        position: relative;
+      }
+
+      #email {
+        position: relative;
+      }
+      #email {
+        position: left;
+        background-size: 30px;
+        background-repeat: no-repeat;
+      }
+
+      #pass {
+        position: relative;
+      }
+      #pass {
+        position: left;
+        background-size: 30px;
+        background-repeat: no-repeat;
+      }
+      img {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+      }
+
+      .password-input {
+        position: relative;
+      }
+      a {
+        text-decoration: None;
+      }
+      #submit {
+        border-radius: 10px;
+        background-color: #6166F4;
+        color: white;
+        padding: 7.5px 15px;
+        outline: none;
+        text-decoration: none;
+      }
+
+      #submit:hover{
+        background-color: #464cf1;
+        cursor: pointer;
+      }
+      #span{
+        color: white;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="div1">
+      <h1 align="center" style="color: white">Sign up</h1>
+      <br />
+      <!-- First name -->
+      <div id="name">
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your first name:"
+          required
+        />
+        <div>
+          <img src="./Images/name.png" height="25" width="25" alt="" />
+        </div>
+      </div>
+      <br />
+      <!-- last name -->
+      <div id="name">
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your last name:"
+          required
+        />
+        <div style="margin-right: 10px">
+          <img src="./Images/name.png" height="25" width="25" alt="" />
+        </div>
+      </div>
+      <br />
+      <!-- Email -->
+      <div id="email">
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email_Id"
+          required
+        />
+        <div>
+          <img
+            src="./Images/email.png"
+            height="25"
+            width="25"
+            alt="email_logo"
+          />
+        </div>
+      </div>
+      <br />
+      <!-- Password -->
+      <div id="pass">
+        <input
+          type="password"
+          id="pass"
+          placeholder="Enter your password"
+          required
+        />
+        <div>
+          <img src="./Images/password.png" height="25" width="25" alt="" />
+        </div>
+      </div>
+      <br />
+      <br />
+
+     <span id="span"> Already have account? </span>&nbsp;<a href="./login.html" target="_blank" style="color: white"
+        >Log in</a
+      >
+      <br />
+      <br />
+      <!-- Button -->
+     <a href="./login.html"> <input type="submit" name="submit" id="submit" value="Submit" /></a>
+
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
