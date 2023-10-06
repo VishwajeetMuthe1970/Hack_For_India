@@ -1,0 +1,19 @@
+body {
+    background-image: url(./assets/images/background.jpg);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 15%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: merriweather;
+    text-align: center;
+    margin-bottom: 20px;
+}
