@@ -1,11 +1,4 @@
- /* #body{
-    background-image: "./Images/background.jpg";
-    background-position: static;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
- 
-  a {
+ a {
       text-decoration: none;
       /* to get rid of underline*/
       color: #fff;
