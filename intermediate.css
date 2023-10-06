@@ -49,24 +49,38 @@ nav > a {
 }
 
 main {
-    align-items: center;
     display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
     height: 100vh;
-    justify-content: center;
-    margin: auto;
-    width: 60%;
 }
 
-div > h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
-    margin: 0px;
-    margin-bottom: 25px;
+main > section {
+    padding: 20px;
+    text-align: center;
 }
 
-div > p {
-    margin: 0px;
-    margin-bottom: 30px;
+div > img {
+    border-radius: 10px;
+}
+
+#exercises > div > a {
+    margin-left: 80%;
+}
+
+#faqs > div > a {
+    margin-left: 100%;
+}
+
+#exercises {
+    margin-left: 80%;
+}
+
+#faqs {
+    margin-left: 80%;
 }
 
 footer {

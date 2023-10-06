@@ -20,13 +20,13 @@ header > nav {
     position: relative;
 }
 
-#logo {
-    border-radius: 10px;
-}
-
 nav > img {
     position: absolute;
     left: 75px;
+}
+
+#logo {
+    border-radius: 10px;
 }
 
 nav > a {
@@ -43,30 +43,36 @@ nav > a {
     text-decoration: none;
 }
 
+img.profile {
+    border-radius: 50%;
+}
+
 .btn:hover {
     background-color: #464cf1;
     cursor: pointer;
 }
 
-main {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+h1, h2 {
+    font-size: 45px;
+}
+
+section#spacing > h2 {
+    margin-bottom: 75px;
+}
+
+#spacing, footer {
+    margin-top: 5%;
+}
+
+#description > p {
+    width: 75%;
     margin: auto;
-    width: 60%;
 }
 
-div > h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
-    margin: 0px;
-    margin-bottom: 25px;
-}
-
-div > p {
-    margin: 0px;
-    margin-bottom: 30px;
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
 }
 
 footer {

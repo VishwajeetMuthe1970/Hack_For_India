@@ -1,5 +1,5 @@
 body {
-    background-image: url("./assets/images/background.jpg");
+    background-image: url("./assets/images/pop-up.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -49,24 +49,29 @@ nav > a {
 }
 
 main {
-    align-items: center;
-    display: flex;
     height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: auto;
-    width: 60%;
+    display: grid;
+    grid-template-columns: 33.33% 33.34% 33.33%;
 }
 
-div > h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
+section > h2 {
     margin: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
-div > p {
-    margin: 0px;
-    margin-bottom: 30px;
+section > p {
+    margin: 0px auto;
+    margin-bottom: 40px;
+    width: 75%;
+}
+
+#line {
+    border: 5px solid white;
+    border-top: 0px;
+    border-bottom: 0px;
 }
 
 footer {
