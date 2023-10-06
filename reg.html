@@ -24,16 +24,17 @@
         color: blue;
       }
       input[type="text"] {
-        padding: 12px 0px 0px 50px;
+        padding: 12px 0px 12px 35px;
         border: 0;
         border-radius: 28px;
+
       }
       ::placeholder {
         color: blue;
         padding: 25px;
       }
       input[type="Email"] {
-        padding: 12px;
+        padding: 12px 0px 12px 35px;
         border: 0;
         border-radius: 20px;
       }
@@ -41,7 +42,7 @@
         color: blue;
       }
       input[type="password"] {
-        padding: 12px;
+        padding: 12px 0px 12px 35px;
         border: 0;
         border-radius: 20px;
       }
@@ -89,11 +90,16 @@
       }
       #submit {
         border-radius: 10px;
+        background-color: #6166F4;
+        color: white;
+        padding: 7.5px 15px;
+        outline: none;
+        text-decoration: none;
       }
 
-      #reset {
-        border-radius: 10px;
-        margin-left: 25px;
+      #submit:hover{
+        background-color: #464cf1;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -130,7 +136,7 @@
       <!-- Email -->
       <div id="email">
         <input
-          type="Email"
+          type="email"
           id="email"
           placeholder="Enter your email_Id"
           required
