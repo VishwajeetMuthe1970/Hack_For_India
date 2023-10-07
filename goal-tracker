@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Savings Goal Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #goal, #progress {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Savings Goal Tracker</h1>
+        <label for="goalAmount">Savings Goal Amount:</label>
+        <input type="number" id="goalAmount" placeholder="Enter your savings goal amount">
+
+        <label for="currentProgress">Current Progress:</label>
+        <input type="number" id="currentProgress" placeholder="Enter your current savings progress">
+
+        <button id="trackProgress">Track Progress</button>
+
+        <p id="goal"></p>
+        <p id="progress"></p>
+    </div>
+
+    <script>
+        document.getElementById('trackProgress').addEventListener('click', function () {
+            const goalAmount = parseFloat(document.getElementById('goalAmount').value) || 0;
+            const currentProgress = parseFloat(document.getElementById('currentProgress').value) || 0;
+
+            const remainingAmount = goalAmount - currentProgress;
+            
+            if (remainingAmount <= 0) {
+                document.getElementById('goal').textContent = `Congratulations! You've reached your savings goal of $${goalAmount.toFixed(2)}`;
+            } else {
+                document.getElementById('goal').textContent = `Your savings goal: $${goalAmount.toFixed(2)}`;
+                document.getElementById('progress').textContent = `Your current progress: ₹${currentProgress.toFixed(2)}`;
+            }
+        });
+    </script>
+</body>
+</html>

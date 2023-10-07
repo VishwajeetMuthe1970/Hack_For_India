@@ -20,10 +20,13 @@ header > nav {
     position: relative;
 }
 
+#logo {
+    border-radius: 10px;
+}
+
 nav > img {
     position: absolute;
     left: 75px;
-    border-radius: 10px;
 }
 
 nav > a {
@@ -43,18 +46,6 @@ nav > a {
 .btn:hover {
     background-color: #464cf1;
     cursor: pointer;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    height: 100\vh;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-}
-
-.card {
-    margin: auto;
 }
 
 .left {
