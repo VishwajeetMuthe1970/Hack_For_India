@@ -20,13 +20,10 @@ header > nav {
     position: relative;
 }
 
-#logo {
-    border-radius: 10px;
-}
-
 nav > img {
     position: absolute;
     left: 75px;
+    border-radius: 10px;
 }
 
 nav > a {
@@ -58,7 +55,7 @@ main {
     height: 100vh;
 }
 
-main > section {
+section {
     padding: 20px;
     text-align: center;
 }
@@ -67,12 +64,12 @@ div > img {
     border-radius: 10px;
 }
 
-#exercises > div > a {
+#exercises a {
     margin-left: 80%;
 }
 
-#faqs > div > a {
-    margin-left: 100%;
+#faqs a {
+    margin-left: 105%;
 }
 
 #exercises {

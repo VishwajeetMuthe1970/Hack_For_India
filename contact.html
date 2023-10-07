@@ -4,14 +4,17 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Contact | FinLit" />
+    <meta
+      name="title"
+      content="Contact | FinLit - Empowering Financial Literacy"
+    />
     <meta
       name="description"
-      content="Welcome to FinLit, your one-stop destination for mastering the art of managing your finances during your college/professional journey. We understand that college/work life can be exciting but financially challenging, and that's why we're here to help."
+      content="Welcome to FitLit, your one-stop destination for mastering the art of managing your finances during your college/professional journey. We understand that college/work life can be exciting but financially challenging, and that's why we're here to help."
     />
 
     <!-- Title -->
-    <title>Contact | FinLit</title>
+    <title>Contact | FinLit - Empowering Financial Literacy</title>
 
     <!-- Google Font -->
 
@@ -62,10 +65,10 @@
     />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <header>
       <nav>
         <img
-          id="logo"
           src="./assets/images/logo.jpeg"
           width="50"
           height="50"
@@ -78,21 +81,23 @@
         <a href="./register.html" class="btn" target="_self">Register</a>
       </nav>
     </header>
-    <div class="container">
+
+    <!-- Content -->
+    <main>
       <div id="contact">
         <h1>Contact Us</h1>
       </div>
-      <form class="contact-form" action="#" method="post">
+      <form action="submit.php" method="post">
         <div class="form-group">
           <label for="name">Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your name"
-            required
+            placeholder="Enter your name" required
           />
         </div>
+
         <div class="form-group">
           <label for="email">Email</label>
           <input
@@ -103,21 +108,27 @@
             required
           />
         </div>
+
         <div class="form-group">
           <label for="message">Message</label>
           <textarea
+            rows="10"
+            cols="90"
             id="message"
             name="message"
             placeholder="Enter your message"
           ></textarea>
         </div>
+
         <div class="form-group">
           <a id="left" class="btn" href="./confirmation.html" target="_self">
             Submit
           </a>
         </div>
       </form>
-    </div>
+    </main>
+
+    <!-- Copyright -->
     <footer>
       <address>&copy; FinLit, 2023. All Rights Reserved.</address>
     </footer>
